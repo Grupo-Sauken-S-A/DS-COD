@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path:  org.apache.commons.io.jar iaik_xsect.jar iaik_jce.jar iai
+ kPkcs11Provider.jar iaikPkcs11Wrapper.jar
+Main-Class: GenEnvelopedCODSafeNet
+

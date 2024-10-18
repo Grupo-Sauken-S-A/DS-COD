@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: kotlin-runtime.jar kotlin-reflect.jar iaikPkcs11Wrapper.ja
+ r org.apache.commons.io.jar iaik_xsect.jar xmlsec-1.5.5.jar iaikPkcs1
+ 1Provider.jar iaik_jce.jar
+Main-Class: DsGUI
+

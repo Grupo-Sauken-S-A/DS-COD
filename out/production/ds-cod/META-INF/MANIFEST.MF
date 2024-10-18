@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: xmlsec-1.5.5.jar iaik_xsect.jar iaik_jce.jar iaikPkcs11Wra
+ pper.jar org.apache.commons.io.jar kotlin-runtime.jar kotlin-reflect.
+ jar iaikPkcs11Provider.jar
+Main-Class: DsCOD
+

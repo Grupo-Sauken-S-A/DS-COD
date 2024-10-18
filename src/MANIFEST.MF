@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: kotlin-runtime.jar kotlin-reflect.jar iaikPkcs11Provider.j
+ ar iaikPkcs11Wrapper.jar org.apache.commons.io.jar xmlsec-1.5.5.jar i
+ aik_xsect.jar iaik_jce.jar
+Main-Class: DsCOD
+

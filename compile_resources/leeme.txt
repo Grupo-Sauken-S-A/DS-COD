@@ -1,0 +1,80 @@
+Leer Primero
+------------
+
+Estas aplicaciones son de distrubición gratuita con código fuente bajo la licencia de uso GPLv2
+(ver archivos "Licencia GPLv2-sp.txt" y/o "License GPLv2-en.txt")
+
+Tienen por objetivo proveer un mecanismo sencillo de integración para aquellos sistemas pre existentes
+en instalaciones de exportadores y/o despachantes de aduana. Está orientado su uso al área de sistemas
+de dichas entidades
+
+La integración se realiza a través de la ejecución de acciones desde la línea de comandos de consola.
+La información se ingresa a través de parámetros pasados en línea y se devuelve a través de arcvhivos
+de texto como salida
+
+Las aplicaciones funcionan en cualquier plataforma que ejecute Java y en donde se dispongan drivers o
+contraoladores para el acceso a los token de seguridad por hardware
+
+
+Contenidos
+----------
+
+- En el directorio principal hay documentos que contienen:
+
+leeme.txt                           -  Este documento
+ALADI_SEC_di2327_rev3.pdf           -  Normativa para la implementación de COD de ALADI
+cod_ver_1.8.0.xsd                   -  Archivo XSD de validación de XML de COD de ALADI versión 1.8.0
+cod_ver_1.8.2.xsd                   -  Archivo XSD de validación de XML de COD de ALADI versión 1.8.2
+XML-sinfirma.xml                    -  Ejemplo de archivo XML enviado por el Exportador sin Firma Digital
+cod_ver_1.8.2_exporter_unsigned.xsd -  Archivo XSD de validación de archivo XML enviado por el Exportador sin Firma Digital
+XML-confirma.xml                    -  Ejemplo de archivo XML enviado por el Exportador CON Firma Digital
+cod_ver_1.8.2_exporter_signed.xsd   -  Archivo XSD de validación de archivo XML enviado por el Exportador CON Firma Digital
+A14-FormA18-unsigned.xml            -  Ejemplo de Acuerdo-14 resuelto con Formulario de Acuerdo-18
+
+- En el directorio principal hay archivos que contienen:
+
+*.jar                     - programas Java compilados y ejemplos 
+*.txt                     - configuración, derechos de autor y licencias de uso
+
+- En el directorio principal también encontrará:
+
+safenet_config.txt  -  Archivo de configuración de driver SafeNet iKey para Windows
+athena_config.txt   -  Archivo de configuración de driver Athena para Windows
+cryptoid_config.txt -  Archivo de configuración de driver mToken+CryptoID para Windows
+test_sauken.pem     -  Certificado de prueba con firma digital para test de firma por software
+*_config.txt        -  Archivos de configuración por Entidad para aquellas entidades con servidor propio en LAN
+
+Notas: 
+
+- La ejecución de las aplicaciones Java requieren tener instalado el "Oracle JRE o SDK Java 1.8.0"
+- Los archivos *.jar se ejecutan desde la linea de comandos de consola con "java -jar nombre.jar"
+- Debe posicionarse sobre el directorio principal para proceder a la ejecución de las aplicaciones
+- El archivo "firmar-gui.jar" se lo puede ejecutar desde el navegador de archivos haciendo doble-click
+
+Contenidos importantes:
+
+firmar-gui.jar   -  Interface gráfica para la ejecución de los comandos comunes de integración
+
+certificado.jar  -  Funciones para la extracción de los datos que permitan firmar digitalmente desde 
+                    un certificado contenido en un archivo "pem" o bien desde token de seguridad por hardware
+
+firmar.jar       -  Programa que permite firmar a un Exportador o Funcionario Habilitado un Certificado de Origen
+                    Para ayuda de uso ejecute: "java -jar firmar.jar --help"
+
+validar.jar      -  Programa que permite validar las firmas digitales presentes en un COD
+                    Para ayuda de uso ejecute: "java -jar validar.jar --help"
+
+validar-xsd.jar  -  Programa que permite validar la estructura y el contenido de un archivo XML de ALADI contra
+                    el archivo de esquema XSD de ALADI según la versión del mismo
+                    Para ayuda de uso ejecute: "java -jar validar-xsd.jar --help"
+
+Archivo de configuración del token:
+
+El driver compatible con PKCS#11 que provee el fabricante del token (normalmente un archivo .DLL ubicado en
+"C:\Windows\System32\") debe introducirse dentro de un archivo de texto (.TXT) con su ubicación completa (ver
+ejemplo enumerados arriba). Importante: notar en Windows que la barra invertida en el path del driver debe
+escribirse dos veces seguidas (\\). Esto no es un error, debe representarse de esta manera.
+
+En caso de que no exista un archivo de configuración del driver de su marca y modelo de token, debe crear uno.
+Antes que nada acceda a la documentación del token y verifique si es compatible con el protocolo PKCS#11. De serlo,
+entonces averigue donde esta ubicado el driver y cárguelo en un nuevo archivo de configuración.

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ns1:Envelope xmlns:ns1="http://www.w3.org/2001/12/soap-envelope">
+    <ns1:CertOrigin>
+        <CODEH id="CODEH">
+            <CODExporter>
+                <COD id="COD">
+                    <CODVer>1.8.0</CODVer>
+                    <CODSubmitterType>EXP</CODSubmitterType>
+                    <Agreement>
+                        <AgreementName>ACE14 (Brasil)</AgreementName>
+                        <AgreementAcronym>A14</AgreementAcronym>
+                    </Agreement>
+                    <FormA18>
+                        <Exporter>
+                            <ExporterCountry>AR</ExporterCountry>
+                            <ExporterBusinessName>IVECO ARGENTINA SA</ExporterBusinessName>
+                            <ExporterAddress>Cnel Int.A.Avalos 2829-Ed.1;P4</ExporterAddress>
+                            <ExporterCity>Munro, Vicente López</ExporterCity>
+                        </Exporter>
+                        <Invoices>
+                            <InvoiceQty>1</InvoiceQty>
+                            <Invoice>
+                                <InvoiceOrderNo>1</InvoiceOrderNo>
+                                <InvoiceNo>0200-00002657</InvoiceNo>
+                                <InvoiceDate>2018-09-12T00:00:00</InvoiceDate>
+                            </Invoice>
+                        </Invoices>
+                        <GoodsList>
+                            <GoodsQty>1</GoodsQty>
+                            <Goods>
+                                <GoodsOrderNo>1</GoodsOrderNo>
+                                <GoodsItemCode>8408.90.90</GoodsItemCode>
+                                <GoodsItemName>LOS DEMÁS. LOS DEMÁS MOTORES. MOTORES DE ÉMBOLO (PISTÓN) DE ENCENDIDO POR
+                                    COMPRESIÓN (MOTORES DIESEL O SEMI-DIESEL).
+                                </GoodsItemName>
+                                <GoodsItemWeightAmount>4500.000000</GoodsItemWeightAmount>
+                                <GoodsItemMeasureUnit>UNIDADES</GoodsItemMeasureUnit>
+                                <GoodsItemValue>66810.500000</GoodsItemValue>
+                                <GoodsItemOriginRules>XXXVIII Protocolo Adicional - Al Acuerdo de Complementacion
+                                    Economica N° ACE 14 - Titulo III - ARTICULO 16
+                                </GoodsItemOriginRules>
+                                <GoodsDeclarationDate>2018-09-12T00:00:00</GoodsDeclarationDate>
+                            </Goods>
+                        </GoodsList>
+                        <Importer>
+                            <ImporterCountry>BR</ImporterCountry>
+                            <ImporterBusinessName>CNH INDUSTRIAL BRASIL LTDA-Piracicaba</ImporterBusinessName>
+                            <ImporterAddress>RUA JOSE COELHO PRATTES JR 1020-Distrito Industrial Unileste
+                            </ImporterAddress>
+                        </Importer>
+                        <Consignee>
+                            <ConsigneeCountry>BR</ConsigneeCountry>
+                            <ConsigneeBusinessName>CNH INDUSTRIAL BRASIL LTDA-Piracicaba</ConsigneeBusinessName>
+                            <ConsigneeAddress>RUA JOSE COELHO PRATTES JR 1020-Distrito Industrial Unileste
+                            </ConsigneeAddress>
+                            <ConsigneeCity>Piracicaba</ConsigneeCity>
+                        </Consignee>
+                        <Transport>
+                            <TransportPortOfLoading>CORDOBA</TransportPortOfLoading>
+                            <TransportMeans>Terrestre</TransportMeans>
+                            <TransportCountryDestination>BR</TransportCountryDestination>
+                        </Transport>
+                        <Comments>
+                            <GeneralComments>TRIGESIMO OCTAVO PROTOCOLO ADICIONAL AL ACUERDO DE COMPLEMENTACION
+                                ECONOMICA N° ACE 14
+                            </GeneralComments>
+                            <LocalCurrency>DOLARES ESTADOUNIDENSES</LocalCurrency>
+                        </Comments>
+                        <Declaration>
+                            <DeclarationDate>2018-09-14T09:24:33.2592964-03:00</DeclarationDate>
+                        </Declaration>
+                    </FormA18>
+                </COD>
+            </CODExporter>
+        </CODEH>
+    </ns1:CertOrigin>
+</ns1:Envelope>
